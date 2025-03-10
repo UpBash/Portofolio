@@ -264,8 +264,18 @@ function showProjectDetails(projectKey) {
         if (fileName) {
             downloadButton.download = fileName;  // Set the download attribute to the file name
         }
+
+        // ✅ Trigger download with JavaScript
+        downloadButton.addEventListener('click', function (event) {
+            event.preventDefault();  // Prevent default anchor behavior
+            const a = document.createElement('a');
+            a.href = downloadButton.href;  // Get the correct file path
+            a.download = fileName;  // Ensure filename is set
+            a.click();  // Programmatically trigger the download
+        });
     }
 }
+
 // Handle project clicks to open the project window and show correct details
 document.querySelectorAll('.project').forEach(project => {
     project.addEventListener('click', function () {
