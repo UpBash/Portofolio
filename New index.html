@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panos Kabasis - Portfolio</title>
+    <link rel="stylesheet" href="porto1.css">
+    <script src="function.js" defer></script> <!-- Ensures JS loads after HTML -->
+</head>
+<body>
+    <!-- Navigation & Hero Section -->
+    <section class="hero-container">
+        <div class="hero-content">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" onclick="toggleSection('about')">About</a></li>
+                    <li><a href="#" onclick="toggleSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="toggleSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-text">
+                <h1>Hey, I'm Panos</h1>
+                <p>Data Scientist | AI Researcher | Problem Solver</p>
+                <p>Welcome to my portfolio, where I showcase my research, projects, and technical expertise.</p>
+                <div class="buttons">
+                    <a href="#" class="button" onclick="toggleSection('projects')">See My Work</a>
+                </div>
+                <a href="cv.pdf" class="button download">Download CV</a>
+            </div>
+
+            <!-- ✅ Dedicated Math Zone to Prevent Overlap -->
+            <div class="hero-math-zone"></div>
+
+            <div class="hero-image">
+                <img src="DSC_0124ivol2.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Collapsible About Section (Appears Over Hero) -->
+     <!-- ✅ Collapsible About Section (Appears Over Hero) -->
+<section id="about" class="collapsible-section hidden">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor justo sit amet erat malesuada, in pharetra lorem venenatis.</p>
+</section>
+
+<!-- ✅ Collapsible Projects Section -->
+    <section id="projects" class="collapsible-section hidden">
+        <h2>My Recent Work</h2>
+        <p>I design and develop modern AI and Data Science solutions with a professional approach.</p>
+
+        <div class="project-container">
+            <!-- ✅ Left Side: Grid of Projects (Smaller Rectangles) -->
+            <div class="project-grid-small">
+                <div class="project-small" onclick="showProjectDetails('thesis')">
+                    <img src="Screenshot 2025-03-08 161856.png" alt="Thesis">
+                    <h3>Thesis</h3>
+                </div>
+                <div class="project-small" onclick="showProjectDetails('nlp')">
+                    <img src="Screenshot 2025-03-10 153500.png" alt="NLP">
+                    <h3>NLP</h3>
+                </div>                
+                <div class="project-small" onclick="showProjectDetails('data-mining')">
+                    <img src="Screenshot 2025-03-08 162145.png" alt="Data Mining">
+                    <h3>Data Mining</h3>
+                </div>
+                <div class="project-small" onclick="showProjectDetails('ml-models-wild')">
+                    <img src="Screenshot 2025-03-08 162213.png" alt="ml-models-wild">
+                    <h3>ML (Forest Wildfires)</h3>
+                </div>
+                
+                <div class="project-small" onclick= "showProjectDetails('ml-models-auc')">
+                    <img src="Screenshot 2025-03-08 162246.png" alt="ml-model-auc">
+                    <h3>ML (Auction Sales)</h3>
+                </div>
+                <div class="project-small" onclick="showProjectDetails('computer-vision')">
+                    <img src="Screenshot 2025-03-08 162315.png" alt="Computer Vision">
+                    <h3>Computer Vision</h3>
+                </div>
+                <div class="project-small" onclick="showProjectDetails('predictive-analytics')">
+                    <img src="Screenshot 2025-03-08 162437.png" alt="Predictive Analytics">
+                    <h3>Predictive Analytics</h3>
+                </div>
+                <div class="project-small" onclick="showProjectDetails('business-analytics')">
+                    <img src="Screenshot 2025-03-08 162017.png" alt="Business Analytics">
+                    <h3>Business Analytics</h3>
+                </div>
+                <div class="project-small" onclick="showProjectDetails('pca-lda')">
+                    <img src="Screenshot 2025-03-08 162103.png" alt="PCA & LDA">
+                    <h3>PCA & LDA</h3>
+                </div>
+            </div>
+
+            <!-- ✅ Right Side: Project Details -->
+            <div class="project-details">
+                <h3 id="project-title">Select a project</h3>
+                <p id="project-description">Click on a project from the left to see details.</p>
+                <a id="download-button" href="#" class="button hidden">Download</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ✅ Collapsible Contact Section -->
+    <section id="contact" class="collapsible-section hidden">
+        <h2>Contact Me</h2>
+        <p>Email: example@email.com</p>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>My Recent Work </h2>
+        <p>I design and develop modern AI and Data Science solutions with a professional approach.</p>
+
+        <div class="project-wrapper">
+            <div class="project large">
+                <img src="Screenshot 2025-03-08 161856.png" alt="Thesis">
+                <h3>Thesis</h3>
+            </div>
+        </div>
+        <div class="project-grid">
+            <div class="project">
+                <img src="Screenshot 2025-03-08 162145.png" alt="Data Mining">
+                <h3>Data Mining and Preprocessing</h3>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2025-03-10 153500.png" alt="NLP">
+                <h3>NLP</h3>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2025-03-08 162213.png" alt="ml-models-wild">
+                <h3>Machine Learning Models (Forest Wildfires)</h3>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2025-03-08 162246.png" alt="ml-model-auc">
+                <h3>Machine Learning Models (Auction Sales)</h3>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2025-03-08 162315.png" alt="Computer Vision">
+                <h3>Computer Vision</h3>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2025-03-08 162437.png" alt="Predictive Analytics">
+                <h3>Predictive Analytics</h3>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2025-03-08 162017.png" alt="Business Process Analytics">
+                <h3>Business Process Analytics</h3>
+            </div>
+            <div class="project">
+                <img src=" Screenshot 2025-03-08 162103.png" alt="PCA & LDA">
+                <h3>PCA & LDA</h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="function.js"></script>
+</body>
+</html>
