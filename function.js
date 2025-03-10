@@ -200,7 +200,7 @@ const projectData = {
     "thesis": {
         title: "Thesis",
         description: "An in-depth exploration of deterministic and stochastic partial differential equations...",
-        file: "thesis.pdf"
+        file: "https://upbash.github.io/Portofolio/thesis.pdf"
     },
     "data-mining": {
         title: "Data Mining and Preprocessing",
