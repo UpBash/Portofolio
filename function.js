@@ -245,7 +245,6 @@ const projectData = {
     
 };
 
-// Show project details when clicked
 function showProjectDetails(projectKey) {
     let project = projectData[projectKey];
 
@@ -259,12 +258,14 @@ function showProjectDetails(projectKey) {
         downloadButton.href = project.file;  // Dynamically set the correct file path
         downloadButton.classList.remove("hidden");  // Make the button visible
 
-        // Optionally: Use this to force the browser to download the file immediately
-        // This works when the `href` is correctly set to the file path.
-        downloadButton.download = project.file.split('/').pop();  // Use the file name (without path) for download
+        // Ensure the filename is valid for the download attribute (strip path if necessary)
+        const fileName = project.file.split('/').pop();  // Get the file name without path
+
+        if (fileName) {
+            downloadButton.download = fileName;  // Set the download attribute to the file name
+        }
     }
 }
-
 // Handle project clicks to open the project window and show correct details
 document.querySelectorAll('.project').forEach(project => {
     project.addEventListener('click', function () {
