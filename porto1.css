@@ -58,7 +58,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #007b5e;
+    color: #a55a04;
 }
 
 /* Download CV Button */
@@ -66,7 +66,7 @@ body {
     position: absolute;   /* Position it absolutely within the hero container */
     top: 20px;            /* Adjust the top distance (from the top edge of the container) */
     right: 20px;          /* Adjust the right distance (from the right edge of the container) */
-    background: #007b5e;
+    background: #643102e0;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -76,7 +76,7 @@ body {
 
 
 .button.download:hover {
-    background: #005a40;
+    background: #090247;
 }
 
 /* Hero Text */
@@ -100,7 +100,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background: #007b5e;
+    background: #a74c02a1;
     border: none;
     border-radius: 25px;
     transition: background 0.3s;
@@ -110,7 +110,7 @@ body {
 
 .button:hover {
 
-    background: #005a40;
+    background: #945503af;
 }
 .hero-container {
     position: relative;
@@ -120,15 +120,17 @@ body {
 
 .hero-image {
     position: absolute;
-    top: -120px; /
-    left: 50%;
+    top: -120px; 
+    left: 550;
     transform: translateX(-50%);
     z-index: 10; 
 }
 
 
 .hero-image img {
+    margin-top: 50px;
     width: 220px;
+    left: 550;
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
@@ -140,8 +142,8 @@ body {
 .projects {
     width: 90%;
     max-width: 1200px;
-    background: #1b3a57;
-    color: white;
+    background: #1b3a57d8;
+    color: rgb(255, 255, 255);
     padding: 50px;
     text-align: center;
     margin-top: 150px; /* Increased from 20px to 80px to push it down */
@@ -174,7 +176,7 @@ body {
 .project {
     width: 300px;
     height: 300px;
-    background: white;
+    background: rgba(255, 255, 255, 0.664);
     border-radius: 15px;
     text-align: center;
     color: black;
@@ -280,7 +282,7 @@ body {
 }
 
 .collapsible-section::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1); /* ✅ Keeps it subtle */
+    background: rgba(255, 255, 255, 0.027); /* ✅ Keeps it subtle */
 }
 
 
@@ -291,7 +293,7 @@ body {
     left: 0;
     width: 100%;
     padding: 15px 50px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(26, 25, 24, 0.692);
     backdrop-filter: blur(10px);
     z-index: 4000;  /* ✅ Ensures navbar is always above everything */
 }
@@ -324,7 +326,7 @@ body {
 .project-small {
     width: 120px;  /* Slightly bigger to fit text */
     height: 120px;
-    background: white;
+    background: rgb(44, 42, 41);
     border-radius: 10px;
     text-align: center;
     color: black;
@@ -385,7 +387,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background: #007b5e;
+    background: #ca6d02;
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -393,7 +395,7 @@ body {
 }
 
 #download-button:hover {
-    background: #005a40;
+    background: #b16503ad;
 }
 
 
