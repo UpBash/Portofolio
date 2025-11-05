@@ -106,6 +106,9 @@ setInterval(drawRandomMath, 5000);
 // Smooth Scroll for Button Clicks (if links lead to sections)
 document.querySelectorAll(".button").forEach(button => {
     button.addEventListener("click", function(e) {
+        // ✅ Skip smooth scroll for download buttons
+        if (this.classList.contains("download")) return;
+
         e.preventDefault();
         let target = document.querySelector(this.getAttribute("href"));
         if (target) {
@@ -113,7 +116,6 @@ document.querySelectorAll(".button").forEach(button => {
         }
     });
 });
-
 // ✅ Close collapsible section when clicking outside of it
 document.addEventListener("click", function (event) {
     let openSection = document.querySelector(".collapsible-section.active");
@@ -296,3 +298,4 @@ document.querySelectorAll('.project').forEach(project => {
         toggleSection('projects');
     });
 });
+
