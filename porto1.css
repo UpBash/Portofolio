@@ -87,6 +87,9 @@ body {
 
 .hero-text h1 {
     font-size: 50px;
+    background: linear-gradient(90deg, #ff9900, #00e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-text p {
@@ -457,3 +460,4 @@ body:not(.no-interaction) {
     overflow: auto;         /* Enable scrolling */
     opacity: 1;             /* Reset opacity */
 }
+
