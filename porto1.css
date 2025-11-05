@@ -93,7 +93,10 @@ body {
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 20px;
+    background: linear-gradient(90deg, #ff9900, #00e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Buttons */
@@ -460,4 +463,5 @@ body:not(.no-interaction) {
     overflow: auto;         /* Enable scrolling */
     opacity: 1;             /* Reset opacity */
 }
+
 
