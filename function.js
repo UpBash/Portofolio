@@ -216,7 +216,7 @@ const projectData = {
     },
     "ml-models-auc": {
         title: "Machine Learning Models (Auction Sales)",
-        description: "Exploring various ma...",
+        description: "Exploring various machine learning models and implementations...",
         file: "ml-models(a).pdf"
     },
     "computer-vision": {
@@ -241,7 +241,7 @@ const projectData = {
     },
     "nlp": {
         title: "NLP",
-        description: "nlpnlpnlpnlp",
+        description: "Implemented and evaluated multiple Natural Language Processing methodologies...",
         file: "nlp.pdf"
     }
     
@@ -298,4 +298,5 @@ document.querySelectorAll('.project').forEach(project => {
         toggleSection('projects');
     });
 });
+
 
