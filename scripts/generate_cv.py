@@ -240,6 +240,20 @@ skills_table.setStyle(
 )
 story.append(skills_table)
 
+story.append(Paragraph("CERTIFICATIONS", styles["Section"]))
+story.append(
+    Paragraph(
+        "<b>Databricks Certified Data Engineer Associate</b> - Databricks",
+        styles["Text"],
+    )
+)
+story.append(
+    Paragraph(
+        "Issued: Jan 2026 | Expires: Jan 2028 | Credential ID: 173131943",
+        styles["Meta"],
+    )
+)
+
 story.append(Paragraph("EDUCATION", styles["Section"]))
 story.append(Paragraph("<b>M.Sc. Information Systems (Big Data Analytics)</b> - National and Kapodistrian University of Athens (NKUA)", styles["Text"]))
 story.append(Paragraph("Thesis: Deterministic and stochastic partial differential equations with machine learning methods.", styles["CvBullet"]))
