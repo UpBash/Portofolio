@@ -3,253 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panos Kabasis - Portfolio</title>
-    <link rel="stylesheet" href="porto1.css">
-    <script src="function.js" defer></script> <!-- Ensures JS loads after HTML -->
+    <title>Panos Kabasis - DataOps Portfolio</title>
+    <link rel="stylesheet" href="assets/css/porto1.css">
+    <script src="assets/js/function.js" defer></script>
 </head>
 <body>
-    <!-- Navigation & Hero Section -->
-    <section class="hero-container">
-        <div class="hero-content">
-            <nav class="navbar">
+    <header class="site-header">
+        <div class="nav-shell container">
+            <a href="#home" class="brand">Panos Kabasis</a>
+            <nav>
                 <ul class="nav-links">
-                    <li><a href="#" onclick="toggleSection('about')">About</a></li>
-                    <li><a href="#" onclick="toggleSection('projects')">Projects</a></li>
-                    <li><a href="#" onclick="toggleSection('contact')">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
-            <div class="hero-text">
-                <h1>Hey, I'm Panos</h1>
-                <p>DataOps Engineer | Data Scientist | AI Researcher</p>
-                <p>Welcome to my portfolio, where I showcase my research, projects, and technical expertise.</p>
-                <a href="cv.pdf" class="button download" download>Download CV</a>
-            </div>
-
-      
-            <div class="hero-math-zone"></div>
-
-            <div class="hero-image">
-                <img src="DSC_0124ivol2.jpg" alt="Profile Picture">
-            </div>
         </div>
-    </section>
+    </header>
 
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy board">
+                    <p class="eyebrow">DataOps Engineer · Azure · Databricks · dbt</p>
+                    <h1>Building reliable data platforms and analytics workflows.</h1>
+                    <p class="hero-intro">
+                        I help teams deliver maintainable data pipelines, governed assets, and production-ready analytics using
+                        Azure Data Factory, Databricks, Unity Catalog, and CI/CD best practices.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="assets/docs/cv/cv.pdf" class="button button-primary" download>Download CV</a>
+                        <a href="#projects" class="button button-secondary">View Projects</a>
+                    </div>
+                    <ul class="hero-highlights">
+                        <li>Currently: DataOps Engineer at EnablerMinds (Frankfurt)</li>
+                        <li>Focus: Orchestration, metadata-driven delivery, analytics engineering</li>
+                        <li>Background: AI/ML research + enterprise data engineering</li>
+                    </ul>
+                </div>
+                <aside class="profile-card board">
+                    <img src="assets/images/profile/DSC_0124ivol2.jpg" alt="Panos Kabasis portrait">
+                    <div>
+                        <h2>Panos Kabasis</h2>
+                        <p>DataOps Engineer</p>
+                        <p>Frankfurt, Germany</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-<section id="about" class="collapsible-section hidden">
-    <h2>About Me</h2>
-    
-    <h3>Professional Overview</h3>
-    <p>
-        I'm Panos—a DataOps Engineer and AI Researcher passionate about solving complex data challenges through innovative technical approaches. 
-        Currently at <strong>EnablerMinds</strong> (Frankfurt, Germany) as a DataOps Engineer, I architect and maintain enterprise-scale data solutions 
-        combining cloud infrastructure, analytics engineering, and collaborative development practices.
-    </p>
-    
-    <h3>DataOps & Data Engineering Expertise</h3>
-    <p>
-        My current role focuses on building reliable, scalable data pipelines and platforms across the modern data stack:
-    </p>
-    <ul>
-        <li><strong>Cloud Data Integration:</strong> Azure Data Factory (ADF) pipeline design, maintenance, and troubleshooting. I work with datasets, 
-            linked services, activities, and parameterized configurations to orchestrate data ingestion, movement, and processing workflows across environments.</li>
-        <li><strong>Data Platforms & Orchestration:</strong> Databricks expertise including job configuration, task scheduling, dependency management, 
-            and notebook-based processing. I maintain Unity Catalog implementations for governed data asset organization and implement configuration-driven 
-            approaches that separate reusable logic from dataset-specific metadata.</li>
-        <li><strong>Analytics Engineering:</strong> dbt development for modular data transformation models. I design sources, models, and validation checks 
-            that improve data reliability and maintainability across the analytics layer. Strong focus on model dependencies, documentation, and collaborative 
-            transformation patterns.</li>
-        <li><strong>CI/CD & Infrastructure:</strong> Azure Pipelines configuration for automated testing and deployment of data infrastructure changes. 
-            I coordinate multi-repository deployments and maintain consistency between code, configurations, and infrastructure requirements.</li>
-        <li><strong>Cross-Team Collaboration:</strong> Experience supporting multiple teams and assignments through Jira, translating business requirements 
-            into pipeline logic, job definitions, and configuration changes. I document solutions and maintain operational knowledge for sustainable team handovers.</li>
-    </ul>
-    
-    <h3>Technical Stack</h3>
-    <table style="width: 100%; border-collapse: collapse;">
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Cloud & Integration</strong></td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Microsoft Azure, Azure Data Factory, Azure Pipelines, Azure Storage</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Data Platforms</strong></td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Databricks, Unity Catalog, PySpark, Databricks Jobs & Workflows</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Analytics & Transformation</strong></td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">dbt (data build tool), SQL, Python, dimensional modeling, data validation</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Version Control & CI/CD</strong></td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">GitHub, Git, Azure Pipelines, pull requests, code reviews</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Configuration & Orchestration</strong></td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Metadata-driven workflows, job scheduling, parameterization, environment management</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Machine Learning</strong></td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Deep Learning, NLP, Computer Vision, Predictive Analytics, Time Series Analysis</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;"><strong>Programming Languages</strong></td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Python, SQL, Spark, Scala (basics)</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px;"><strong>Collaboration & Tools</strong></td>
-            <td style="padding: 8px;">Jira, Confluence, GitHub, multi-repository development</td>
-        </tr>
-    </table>
-    
-    <h3>Career Journey</h3>
-    <p>
-        My professional journey combines hands-on data engineering execution with cutting-edge AI research. I started at the National Observatory of Athens 
-        analyzing solar energy data with time series forecasting, then moved into medical research at NKUA developing machine learning models for classification tasks. 
-        This foundation evolved into specialized data engineering roles at Tgndata and Accenture, where I designed end-to-end ETL pipelines and analytics platforms 
-        for enterprise clients. My current role at EnablerMinds represents the synthesis of these experiences—applying full-stack data engineering practices to 
-        build maintainable, enterprise-scale data solutions.<br><br>
-        
-        My academic background includes a Master's thesis on deterministic and stochastic partial differential equations solved using advanced machine learning techniques—
-        a unique blend of mathematical rigor and modern AI methodologies that informs my approach to complex data engineering challenges.
-    </p>
-    
-    <h3>Approach & Philosophy</h3>
-    <p>
-        I'm driven by continuous learning and mastery of emerging technologies. My approach emphasizes:
-    </p>
-    <ul>
-        <li><strong>Reliability & Scalability:</strong> Building data solutions that are robust, testable, and can grow with organizational needs.</li>
-        <li><strong>Maintainability:</strong> Writing code and configurations that are clear, well-documented, and follow established conventions, 
-            enabling sustainable team collaboration.</li>
-        <li><strong>Collaboration:</strong> Translating between technical and business contexts, supporting multiple teams, and documenting decisions 
-            for knowledge transfer.</li>
-        <li><strong>Operational Excellence:</strong> Understanding not just the "what" and "why" but also the "how" of running data systems reliably in production.</li>
-        <li><strong>Continuous Improvement:</strong> Investigating failures, identifying root causes, and implementing targeted improvements that reduce 
-            future incidents and enhance system efficiency.</li>
-    </ul>
-    
-    <p>
-        My ultimate goal is to contribute meaningfully to the data engineering and AI fields by turning complex data into actionable insights, 
-        while building systems and practices that enable teams to operate at scale with confidence and clarity.
-    </p>
-</section>
-
-
-
-    <section id="projects" class="collapsible-section hidden">
-        <h2>My Recent Work</h2>
-        <p>I design and develop modern AI and Data Science solutions with a professional approach.</p>
-
-        <div class="project-container">
-
-            <div class="project-grid-small">
-                <div class="project-small" onclick="showProjectDetails('thesis')">
-                    <img src="Screenshot 2025-03-08 161856.png" alt="Thesis">
-                    <h3>Thesis</h3>
-                </div>
-                <div class="project-small" onclick="showProjectDetails('nlp')">
-                    <img src="Screenshot 2025-03-10 153500.png" alt="NLP">
-                    <h3>NLP</h3>
-                </div>                
-                <div class="project-small" onclick="showProjectDetails('data-mining')">
-                    <img src="Screenshot 2025-03-08 162145.png" alt="Data Mining">
-                    <h3>Data Mining</h3>
-                </div>
-                <div class="project-small" onclick="showProjectDetails('ml-models-wild')">
-                    <img src="Screenshot 2025-03-08 162213.png" alt="ml-models-wild">
-                    <h3>ML (Forest Wildfires)</h3>
-                </div>
-                
-                <div class="project-small" onclick= "showProjectDetails('ml-models-auc')">
-                    <img src="Screenshot 2025-03-08 162246.png" alt="ml-model-auc">
-                    <h3>ML (Auction Sales)</h3>
-                </div>
-                <div class="project-small" onclick="showProjectDetails('computer-vision')">
-                    <img src="Screenshot 2025-03-08 162315.png" alt="Computer Vision">
-                    <h3>Computer Vision</h3>
-                </div>
-                <div class="project-small" onclick="showProjectDetails('predictive-analytics')">
-                    <img src="Screenshot 2025-03-08 162437.png" alt="Predictive Analytics">
-                    <h3>Predictive Analytics</h3>
-                </div>
-                <div class="project-small" onclick="showProjectDetails('business-analytics')">
-                    <img src="Screenshot 2025-03-08 162017.png" alt="Business Analytics">
-                    <h3>Business Analytics</h3>
-                </div>
-                <div class="project-small" onclick="showProjectDetails('pca-lda')">
-                    <img src="Screenshot 2025-03-08 162103.png" alt="PCA & LDA">
-                    <h3>PCA & LDA</h3>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <div class="board">
+                    <p>
+                        I am a DataOps Engineer with hands-on experience across Azure-based data platforms, Databricks workloads, and
+                        analytics engineering projects. I contribute across multiple repositories and teams, connecting ingestion, transformation,
+                        metadata, deployment, and operational support into one reliable delivery flow.
+                    </p>
+                    <p>
+                        My approach combines engineering discipline with research depth: I focus on reusable configurations, transparent workflows,
+                        and practical troubleshooting so data systems stay scalable, governed, and easier to maintain.
+                    </p>
                 </div>
             </div>
+        </section>
 
-
-            <div class="project-details">
-                <h3 id="project-title">Select a project</h3>
-                <p id="project-description">Click on a project from the left to see details.</p>
-                <a id="download-button" href="#" class="button hidden">Download</a>
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="experience-grid">
+                    <article class="board">
+                        <h3>DataOps Engineer · EnablerMinds</h3>
+                        <p class="meta">Sep 2026 - Present · Frankfurt, Germany</p>
+                        <ul>
+                            <li>Configured and extended Azure Data Factory pipelines, datasets, linked services, parameters, and triggers.</li>
+                            <li>Built and maintained Databricks job definitions, schedules, dependencies, and execution settings.</li>
+                            <li>Supported governed data delivery with Unity Catalog-aligned catalog/schema/table references.</li>
+                            <li>Developed dbt models and dependencies with validation checks and modular transformations.</li>
+                            <li>Contributed to Azure Pipelines CI/CD and coordinated multi-repository rollout changes.</li>
+                        </ul>
+                    </article>
+                    <article class="board">
+                        <h3>Previous Roles</h3>
+                        <ul class="compact-list">
+                            <li><strong>Data Engineer</strong> · Accenture (2024 - 2026)</li>
+                            <li><strong>Data Engineering Analyst</strong> · Tgndata (2023 - 2024)</li>
+                            <li><strong>Research Associate</strong> · NKUA Medical Research Lab (2022 - 2023)</li>
+                            <li><strong>Research Analyst</strong> · National Observatory of Athens (2021 - 2022)</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <article class="board">
+                        <h3>Cloud & Integration</h3>
+                        <p>Microsoft Azure, Azure Data Factory, Azure Pipelines, Azure Storage</p>
+                    </article>
+                    <article class="board">
+                        <h3>Data Platform</h3>
+                        <p>Databricks, Unity Catalog, Databricks Jobs, PySpark</p>
+                    </article>
+                    <article class="board">
+                        <h3>Analytics Engineering</h3>
+                        <p>dbt, SQL transformations, source modeling, data validation</p>
+                    </article>
+                    <article class="board">
+                        <h3>Delivery & Collaboration</h3>
+                        <p>GitHub, Git, pull requests, code reviews, Jira, multi-repository delivery</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Selected Projects</h2>
+                <p class="section-lead">Select a project board to preview details and download the full PDF.</p>
+                <div class="projects-layout">
+                    <div class="project-grid">
+                        <button class="project-card active" type="button" data-project="thesis">
+                            <img src="assets/images/projects/Screenshot 2025-03-08 161856.png" alt="Thesis">
+                            <span>Thesis</span>
+                        </button>
+                        <button class="project-card" type="button" data-project="nlp">
+                            <img src="assets/images/projects/Screenshot 2025-03-10 153500.png" alt="NLP">
+                            <span>NLP</span>
+                        </button>
+                        <button class="project-card" type="button" data-project="data-mining">
+                            <img src="assets/images/projects/Screenshot 2025-03-08 162145.png" alt="Data Mining">
+                            <span>Data Mining</span>
+                        </button>
+                        <button class="project-card" type="button" data-project="ml-models-wild">
+                            <img src="assets/images/projects/Screenshot 2025-03-08 162213.png" alt="ML Forest Wildfires">
+                            <span>ML: Forest Wildfires</span>
+                        </button>
+                        <button class="project-card" type="button" data-project="ml-models-auc">
+                            <img src="assets/images/projects/Screenshot 2025-03-08 162246.png" alt="ML Auction Sales">
+                            <span>ML: Auction Sales</span>
+                        </button>
+                        <button class="project-card" type="button" data-project="computer-vision">
+                            <img src="assets/images/projects/Screenshot 2025-03-08 162315.png" alt="Computer Vision">
+                            <span>Computer Vision</span>
+                        </button>
+                        <button class="project-card" type="button" data-project="predictive-analytics">
+                            <img src="assets/images/projects/Screenshot 2025-03-08 162437.png" alt="Predictive Analytics">
+                            <span>Predictive Analytics</span>
+                        </button>
+                        <button class="project-card" type="button" data-project="business-analytics">
+                            <img src="assets/images/projects/Screenshot 2025-03-08 162017.png" alt="Business Analytics">
+                            <span>Business Analytics</span>
+                        </button>
+                        <button class="project-card" type="button" data-project="pca-lda">
+                            <img src="assets/images/projects/Screenshot 2025-03-08 162103.png" alt="PCA & LDA">
+                            <span>PCA & LDA</span>
+                        </button>
+                    </div>
+                    <aside class="board project-panel">
+                        <h3 id="project-title">Thesis</h3>
+                        <p id="project-description"></p>
+                        <a id="download-button" class="button button-primary" href="assets/docs/projects/thesis.pdf" download>Download Project PDF</a>
+                    </aside>
+                </div>
+            </div>
+        </section>
 
-<section id="contact" class="collapsible-section hidden">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:panos.kabasis@gmail.com">panos.kabasis@gmail.com</a></p>
-    <p>Phone: <a href="tel:+306988120621">(+30) 698 8120 621</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/panos-kabasis-618b18264/" target="_blank">linkedin.com/in/panos-kabasis-618b18264/</a></p>
-    <p>GitHub: <a href="https://github.com/UpBash" target="_blank">github.com/UpBash</a></p>
-</section>
-
-
-
-
-    <section class="projects">
-        <h2>My Recent Work </h2>
-        <p>I design and develop modern AI and Data Science solutions with a professional approach.</p>
-
-        <div class="project-wrapper">
-            <div class="project large">
-                <img src="Screenshot 2025-03-08 161856.png" alt="Thesis">
-                <h3>Thesis</h3>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-grid">
+                    <a class="board contact-item" href="mailto:panos.kabasis@gmail.com">
+                        <h3>Email</h3>
+                        <p>panos.kabasis@gmail.com</p>
+                    </a>
+                    <a class="board contact-item" href="tel:+306988120621">
+                        <h3>Phone</h3>
+                        <p>(+30) 698 8120 621</p>
+                    </a>
+                    <a class="board contact-item" href="https://linkedin.com/in/panos-kabasis-618b18264/" target="_blank" rel="noreferrer">
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/panos-kabasis-618b18264</p>
+                    </a>
+                    <a class="board contact-item" href="https://github.com/UpBash" target="_blank" rel="noreferrer">
+                        <h3>GitHub</h3>
+                        <p>github.com/UpBash</p>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="project-grid">
-            <div class="project">
-                <img src="Screenshot 2025-03-08 162145.png" alt="Data Mining">
-                <h3>Data Mining and Preprocessing</h3>
-            </div>
-            <div class="project">
-                <img src="Screenshot 2025-03-10 153500.png" alt="NLP">
-                <h3>NLP</h3>
-            </div>
-            <div class="project">
-                <img src="Screenshot 2025-03-08 162213.png" alt="ml-models-wild">
-                <h3>Machine Learning Models (Forest Wildfires)</h3>
-            </div>
-            <div class="project">
-                <img src="Screenshot 2025-03-08 162246.png" alt="ml-model-auc">
-                <h3>Machine Learning Models (Auction Sales)</h3>
-            </div>
-            <div class="project">
-                <img src="Screenshot 2025-03-08 162315.png" alt="Computer Vision">
-                <h3>Computer Vision</h3>
-            </div>
-            <div class="project">
-                <img src="Screenshot 2025-03-08 162437.png" alt="Predictive Analytics">
-                <h3>Predictive Analytics</h3>
-            </div>
-            <div class="project">
-                <img src="Screenshot 2025-03-08 162017.png" alt="Business Process Analytics">
-                <h3>Business Process Analytics</h3>
-            </div>
-            <div class="project">
-                <img src=" Screenshot 2025-03-08 162103.png" alt="PCA & LDA">
-                <h3>PCA & LDA</h3>
-            </div>
-        </div>
-    </section>
-
-    <script src="function.js"></script>
+        </section>
+    </main>
 </body>
 </html>
