@@ -24,7 +24,7 @@ body {
     margin: 0;
     font-family: "Inter", "Segoe UI", Arial, sans-serif;
     color: var(--ink);
-    background: linear-gradient(180deg, rgba(243, 245, 249, 0.92), rgba(243, 245, 249, 0.96)), url("../images/background/green-canvas-textures-surface-background_74190-6372.avif") center/cover fixed;
+    background: url("../images/background/green-canvas-textures-surface-background_74190-6372.avif") center/cover fixed;
 }
 
 .container {
@@ -247,6 +247,20 @@ body {
 .section-lead {
     margin-top: 0;
     color: var(--ink-soft);
+}
+
+.project-featured-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.project-card-featured {
+    width: min(520px, 100%);
+}
+
+.project-card-featured img {
+    height: 240px;
 }
 
 .projects-layout {
