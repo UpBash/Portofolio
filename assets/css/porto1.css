@@ -203,6 +203,13 @@ body {
 .section h2 {
     margin: 0 0 14px;
     font-size: clamp(1.45rem, 2.3vw, 2rem);
+    display: inline-block;
+    color: #0b1f44;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(220, 228, 239, 0.95);
+    border-radius: 12px;
+    padding: 8px 14px;
+    box-shadow: 0 10px 22px rgba(16, 24, 40, 0.12);
 }
 
 .section p {
@@ -247,6 +254,10 @@ body {
 .section-lead {
     margin-top: 0;
     color: var(--ink-soft);
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.86);
+    border-radius: 10px;
+    padding: 6px 10px;
 }
 
 .project-featured-wrap {
@@ -256,11 +267,11 @@ body {
 }
 
 .project-card-featured {
-    width: min(520px, 100%);
+    width: min(860px, 100%);
 }
 
 .project-card-featured img {
-    height: 240px;
+    height: 320px;
 }
 
 .projects-layout {
