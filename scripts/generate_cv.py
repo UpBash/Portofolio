@@ -116,7 +116,7 @@ header_left = [
 ]
 
 if os.path.exists(PHOTO_PATH):
-    photo = Image(PHOTO_PATH, width=1.2 * inch, height=4.2 * inch)
+    photo = Image(PHOTO_PATH, width=1.4 * inch, height=1.8 * inch)
 else:
     photo = Paragraph("Photo unavailable", styles["Meta"])
 
